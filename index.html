@@ -66,13 +66,13 @@
         </label>
         <p class="explanation">Wanneer zijn de mediabestanden gecreëerd?</p>
 
-        <label for="usage_rights">Licentietitel of andere gebruiksrechten:
-            <input type="text" id="usage_rights" name="usage_rights">
+        <label for="rights">Licentietitel of andere gebruiksrechten:
+            <input type="text" id="rights" name="rights">
         </label>
         <p class="explanation">bv. CC BY-SA 4.0, publiek domein, niet beschikbaar, mag in het nieuwsbericht, ...</p>
 
-        <label for="comments_usage_rights">Opmerkingen over licentietitel of andere gebruiksrechten:
-            <textarea id="comments_usage_rights" name="comments_usage_rights"></textarea>
+        <label for="comments_rights">Opmerkingen over licentietitel of andere gebruiksrechten:
+            <textarea id="comments_rights" name="comments_rights"></textarea>
         </label>
         <p class="explanation">bv. beheer, het verwerven van de informatie, moeilijkheden, verrassingen, ...</p>
 
@@ -140,7 +140,7 @@
         function downloadCSV() {
             const form = document.getElementById('metadataForm');
             const headers = [
-                ["admin_email","date","usage_rights","comments_usage_rights","publication_message","blocked","author_first_name","author_last_name","author_org","comments_on_author","source_name","comments_on_source","descr","keywords"],
+                ["admin_email","date","rights","comments_rights","publication_message","blocked","author_first_name","author_last_name","author_org","comments_on_author","source_name","comments_on_source","descr","keywords"],
                 ["E-mailadres beheerder","Datum","Licentietitel of andere gebruiksrechten","Opmerkingen over licentietitel of andere gebruiksrechten","Boodschap bij publicatie","Gebruik geblokkeerd","Voornaam auteur","Achternaam auteur","Organisatie auteur","Opmerkingen over auteur","Naam bron","Opmerkingen over bron","Beschrijving","Trefwoorden"],
                 ["example@example.com","31/12/2001","text","text","text","nee / ja","text","text","text","text","text","text","text","text, text, text"],
                 ["E-mailadres van beheerder van dit metadata-document","Wanneer zijn de mediabestanden gecreëerd?","bv. CC BY-SA 4.0, publiek domein, niet beschikbaar, mag in het nieuwsbericht, ...","bv. beheer, het verwerven van de informatie, moeilijkheden, verrassingen, ...","Indien een extra boodschap/vermelding noodzakelijk is om de media te kunnen publiceren","bv. geblokkeerd tegen gebruik in opdracht van een beheerder, auteur, eigenaar, ...","Voornaam auteur mediabestanden","Achternaam auteur mediabestanden","Organisatie auteur mediabestanden","Opmerkingen over auteur mediabestanden","Wie of wat is je bron?","bv. externe locaties, het verwerven van de mediabestanden, verrassingen, ...","Korte beschrijving van de mediabestanden","Trefwoorden. Meerdere trefwoorden scheiden met een comma + spatie"]
